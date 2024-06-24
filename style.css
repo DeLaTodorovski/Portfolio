@@ -68,8 +68,11 @@ body {
     justify-content: space-around;
     flex-grow: 1;
     padding: 10px;
+    background-image: url("images/Computer-Science.webp");
+    background-size: cover;
+    background-repeat: repeat;
 
-}
+}   
 
 .hero-image{
     margin-right:30px;
@@ -187,4 +190,33 @@ body {
     border-radius: 5px;
 
     padding: 20px;
+  }
+
+
+
+  #container {
+    height: 400px;
+    width: 400px;
+    position: relative;
+  }
+  #frontimage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    background-image: url("images/1607734797230.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    
+  }
+  #text {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    left: 150px;
+    top: 300px;
   }
