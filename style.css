@@ -2,7 +2,10 @@
 
 * {
     font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
 }
+
+
 
 html{
     scroll-behavior: smooth;
@@ -24,7 +27,7 @@ body {
     --spacing-3: 16px;
     --spacing-4: 24px;
     --border-radius: 12px;
-    --font-color: #323232;
+    --font-color: #ccc;
   }
 
 #header {
@@ -50,12 +53,11 @@ body {
     display: inline-flex;
     padding-left: 10px;
     padding-right: 10px;
-
     margin-right: 10px;
 }
 
 #content {
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(241, 241, 241);
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -69,39 +71,49 @@ body {
 
 }
 
-.hero-image {
-    display: inline-flex;
-    height: 300px;
-    margin-right: 10px;
-    border-right: 1px solid #ccc;
+.hero-image{
+    margin-right:30px;
+}
+
+
+.hero-image i{
+    padding-bottom: 10px;
+    padding-left: 10px;;
+}
+
+.hero-image img{
+    height: 250px;
     border-radius: 10px;
-
+    margin-bottom: 10px;
 }
+
 .hero-text {
-    display: inline-block;
-    margin-left: 10px;
-
-}
-
-.hero-text p{
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
+}
+
+.hero-text p{
+
 }
 
 .hero-text h2{
-    display: inline-block;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 10px;
+
 }
 
+
 #skills-container {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-top: -10px;
   }
   
   #skills-container > * {
@@ -110,8 +122,69 @@ body {
     margin-top: var(--spacing-1);
   }
 
-  .icon {
-    font-size: 2em;
-    color: var(--font-color);
-    margin: 0 var(--spacing-1);
+  footer {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  .breadcrumb{
+    background-color: rgb(241, 241, 241);
+    margin-top: 0px;
+    margin-left: -20px;
+    list-style: none;
+    }
+    
+  .breadcrumb-item{
+
+    display: inline;
+    font-size: 16px;
+    }
+  
+  .breadcrumb li+li:before{
+    padding: 5px;
+    color: black;
+    content: ">>";
+  }
+  
+  .breadcrumb-item a{
+    color: #2e4053;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item a:hover{
+    color: rgb(223, 223, 223);
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+
+    padding: 20px;
   }
